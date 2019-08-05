@@ -1,0 +1,29 @@
+/* pages/system/system.wxss */
+
+.system_item {
+  box-shadow: 5rpx 5rpx 12px #ccc;
+  border-radius: 20rpx;
+  padding: 25rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.system_title {
+  font-size: 38rpx;
+  font-weight: 460;
+  margin-bottom: 24rpx;
+}
+
+.system_desc {
+  margin-right: 35rpx;
+  margin-top: 40rpx;
+  color: #808080;
+  font-size: 35rpx;
+  word-break: keep-all;
+  word-wrap: break-word;
+}

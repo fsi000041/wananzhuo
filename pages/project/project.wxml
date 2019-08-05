@@ -1,0 +1,23 @@
+<!--pages/project/project.wxml-->
+<!-- <view > -->
+    <picker class='selector' bindchange="sel" value="{{titles[index].id}}" range="{{titles}}"  range-key="{{'name'}}" mode="selector">
+    <view class="picker">
+      {{titles[index].name}}▼
+    </view>
+  </picker>
+    <!-- <text>动画▼</text> -->
+<!-- </view> -->
+
+
+<view class='project_item' wx:for="{{ArticleList}}" wx:key="key" bindtap="bt_item" data-name="{{item.link}}">
+  <image src='{{item.envelopePic}}'></image>
+
+  <view class='project_right'>
+    <text style="font-size: 38rpx;font-weight:470">{{item.title}}</text>
+    <text class='project_title' style='font-size: 34rpx; color:#929292'>{{item.desc}}</text>
+    <view class='project_bottom'>
+      <text style="font-size: 34rpx ;color:#333">{{item.niceDate}}</text>
+      <text style="font-size: 34rpx; margin-left:30rpx; color:#333">{{item.author}}</text>
+    </view>
+  </view>
+</view>

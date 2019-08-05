@@ -1,0 +1,10 @@
+<!--pages/system/system.wxml-->
+
+<block wx:for="{{treeList}}" wx:key="key">
+  <view class='system_item'>
+    <text class='system_title'>{{item.name}}</text>
+    <view>
+      <text class='system_desc' wx:for="{{item.children}}" wx:for-item="bean" wx:key="id">{{bean.name}}</text>
+    </view>
+  </view>
+</block>

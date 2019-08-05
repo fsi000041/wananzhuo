@@ -1,0 +1,25 @@
+<!--pages/hot/hot.wxml-->
+<view class='container'>
+  <!-- 搜索 -->
+  <view class='search'>
+    <SearchBar id="SearchBar" addflag="{{addflag}}" addimg="{{addimg}}" bind:addhandle="addhandle" searchstr="{{searchstr}}" bind:searchList="searchList" bind:endsearchList="endsearchList" bind:cancelsearch="cancelsearch" bind:activity_clear="activity_clear">
+    </SearchBar>
+  </view>
+
+  <view class='title'>
+    <text>大家都在搜</text>
+  </view>
+
+  <view class='hot_view'>
+    <text class='hot_search' wx:for="{{list}}" style='color:{{colorArr[index%8]}}' wx:key="key">{{item.name}}</text>
+  </view>
+
+  <view class='title'>
+    <text>常用网站</text>
+  </view>
+
+
+  <view class='hot_view'>
+    <text class='hot_search' wx:for="{{webList}}" wx:key="key" style='color:{{colorArr[index%8]}};'>{{item.name}}</text>
+  </view>
+</view>

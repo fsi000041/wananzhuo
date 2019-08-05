@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="top">
+
+    <image src="/image/head.jpeg"></image>
+    <text>点击头像登录</text>
+
+  </view>
+
+  <view class="mid" bindtap="bt_item" >
+  <view class="item" wx:for="{{titles}}" wx:key="key">
+    <text>{{item}}</text>
+    <image src="/image/icon_right.png"></image>
+  </view>
+
+</view>
+
+  <button class="login">退出登录</button>
+
+</view>

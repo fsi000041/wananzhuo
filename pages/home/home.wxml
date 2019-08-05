@@ -1,0 +1,32 @@
+<view>
+  <!-- //轮播图 -->
+  <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000" indicator-active-color='#FF8E0D' circular="true" indicator-color='#fff'>
+    <block wx:for="{{imgUrls}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item.imagePath}}" bindtap="bt_img" class="slide-image" width="100vw"    height="150" mode='widthFix' data-url="{{item.url}}"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!-- 首页列表 -->
+
+  <block wx:for="{{ArticleList}}" wx:key="key">
+    <view class='title_item'>
+      <view class='title_top'>
+        <text class='title_name'>{{item.author}}</text>
+        <text class='title_time'>{{item.niceDate}}</text>
+      </view>
+
+      <text class='title_info'>{{item.title}}</text>
+      <view class='title_bottom'>
+        <text>{{item.superChapterName}}/{{item.chapterName}}</text>
+         <image wx:if="{{!item.collect}}" src='/image/like_nor.png'></image>
+         <image wx:else="{{item.collect}}" src='/image/like.png'></image>
+      </view>
+    </view>
+  </block>
+
+
+
+
+</view>

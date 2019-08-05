@@ -1,0 +1,45 @@
+/* pages/hot/hot.wxss */
+
+page {
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.search {
+  width: 100vw;
+  background-color: #f5f5f5;
+}
+
+.title {
+  height: 80rpx;
+  width: 100vw;
+  line-height: 80rpx;
+  padding-left: 30rpx;
+  background: white;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.title text {
+  font-size: 37rpx;
+}
+
+/* 大家都在 */
+
+.hot_search {
+  margin: 10rpx;
+  width: fit-content;
+  background-color: white;
+  padding: 18rpx;
+  border-radius: 40rpx;
+}
+
+.hot_view {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
